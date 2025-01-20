@@ -1,0 +1,15 @@
+# Virtualenv files
+/venv
+
+# Database file
+*.sqlite3
+
+
+# env files
+.env
+
+#staticfiles
+/staticfiles
+
+/media
+
