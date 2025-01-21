@@ -11,6 +11,10 @@ services:
     environment:
       - DEBUG=0
       - ALLOWED_HOSTS=*
+      - DATABASE_URL=${DATABASE_URL}
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
     command: >
       sh -c "python manage.py makemigrations && python manage.py migrate &&
              gunicorn --bind 0.0.0.0:8000 backend.wsgi:application"
