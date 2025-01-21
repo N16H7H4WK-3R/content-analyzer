@@ -103,5 +103,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # CORS settings
 CORS_ALLOWED_ORIGINS = os.getenv(
-    'CORS_ALLOWED_ORIGINS', 'https://content-analyzer-unthinkable.netlify.app/').split(',')
+    'CORS_ALLOWED_ORIGINS', 'https://content-analyzer-unthinkable.netlify.app').split(',')
 CORS_ALLOW_CREDENTIALS = True
